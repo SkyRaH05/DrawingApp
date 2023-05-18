@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A drawing area where kids can play while drawing."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Crimson+Pro:wght@200&family=Edu+NSW+ACT+Foundation:wght@400;500;600&family=Inter:wght@400;500;700&family=Nunito:wght@200&family=Rubik:ital,wght@0,400;0,500;0,600;1,700&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/start/jquery-ui.css"
+    />
+    <link rel="shortcut icon" href="favicon/color.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Drawing App &dbkarow; Wave your Imagination</title>
+  </head>
+  <body>
+    <section class="section">
+      <img class="img" src="images/02.png" alt="paint-img" />
+      <div class="heading">
+        <h1>Draw Your Imagination</h1>
+        <ion-icon class="icon" name="aperture-outline"></ion-icon>
+      </div>
+      <div class="container">
+        <div class="input">
+          <label for="color-palette"></label>
+          <input type="color" list id="paintColor" />
+          <ion-icon name="color-palette-outline"></ion-icon>
+        </div>
+        <div class="input" id="thick">
+          <div id="circle"></div>
+        </div>
+        <div class="input">
+          <div class="slide"></div>
+        </div>
+      </div>
+
+      <div class="draw-area" id="draw-space">
+        <canvas class="canvas" id="paint" width="890px" height="320px"></canvas>
+      </div>
+
+      <div class="button">
+        <button class="btn" id="eraser">
+          Eraser <ion-icon name="stop-outline"></ion-icon>
+        </button>
+
+        <button class="btn" id="save">
+          Save <ion-icon name="bookmark-outline"></ion-icon>
+        </button>
+        <button class="btn" id="reset">
+          Reset <ion-icon name="refresh-outline"></ion-icon>
+        </button>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script defer src="app.js"></script>
+  </body>
+</html>
